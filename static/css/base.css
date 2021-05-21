@@ -11,3 +11,9 @@ body {
     height: calc(100vh - 164px);
     font-family: 'Bitter' , serif;
 }
+
+.text-about {
+    background-color: #fafafa;
+    opacity: 0.6;
+    
+}
