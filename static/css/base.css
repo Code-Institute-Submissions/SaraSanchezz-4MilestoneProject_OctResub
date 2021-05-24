@@ -14,6 +14,35 @@ body {
 
 .text-about {
     background-color: #fafafa;
-    opacity: 0.6;
+    opacity: 0.8;
     
 }
+
+.dropdown-toggle::after {
+     content: none;
+}
+
+ @media only screen and (max-width: 800px) {
+     .form-control{
+       display:none;
+     }
+     .btn{
+      display: none;
+     }
+    #right-side {
+     justify-content: flex-end;
+     display: flex;
+    }
+    #navbarDropdown {
+     justify-content: flex-end;
+     display: flex;
+
+    }
+    
+ }
+
+
+ #right-side {
+     justify-content: flex-end;
+     display: flex;
+ }
