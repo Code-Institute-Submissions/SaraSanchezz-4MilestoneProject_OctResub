@@ -1,0 +1,26 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "canvas",
+      "friendly_name": "Canvas"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "prints",
+      "friendly_name": "Prints"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "accesories",
+      "friendly_name": "Accesories"
+    }
+  }
+]
