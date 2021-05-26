@@ -15,6 +15,14 @@
         <div class="row mt-3">
             <div class="col text-center mt-3">
                 <h2 class="logo-font-2">Paintings</h2>
+                  <div class="dropdown">
+                        <button class="btn btn-bg.light text-dark border-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort by 
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price</a>
+                        </div>
+                    </div>
                 <hr class="w-100 mb-1">
             </div>
         </div>
