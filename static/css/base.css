@@ -40,7 +40,6 @@ body {
      display: flex;
 
     }
-    
  }
 
 
@@ -75,3 +74,14 @@ body {
 
 }
 
+.btt-button {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}

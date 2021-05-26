@@ -76,7 +76,7 @@
                                 <li><a class="dropdown-item" href="#">Product Management</a></li>
                             {% endif %}
                             <li><a class="dropdown-item" href="#">My Account</a></li>
-                            <li><hr class="dropdown-item" href="{% url 'account_logout' %}">Logout</li>
+                            <li><a class="dropdown-item" href="{% url 'account_logout' %}"></a>Logout</li>
                         {% else %}
                             <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
                             <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
