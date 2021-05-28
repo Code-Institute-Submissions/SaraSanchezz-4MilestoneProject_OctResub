@@ -72,8 +72,6 @@
         </div>
     </div>
 {% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
+{% block corejs %}
+{% include 'products/includes/quantity_script.html' %}
 {% endblock %}

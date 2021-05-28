@@ -84,17 +84,6 @@
             </div>
         </div>
     </div>
-    <div class="btn-group-toggle" data-toggle="buttons">
-        <a class="btn btn-link d-flex">
-            <i class="far fa-arrow-alt-circle-up text-black mx-auto my-auto"></i>
-        </a>	
-    </div>
 {% endblock %}
-{% block postloadjs %}
-    {{ block.super }}
-        <script type="text/javascript">
-            $('.btn-link').click(function(e) {
-                window.scrollTo(0,0)
-            })
-        </script>
+{% block corejs %}
 {% endblock %}
