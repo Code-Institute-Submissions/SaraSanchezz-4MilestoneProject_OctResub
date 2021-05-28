@@ -77,3 +77,8 @@ body {
 .remove-item {
     cursor: pointer;
 }
+
+.message-container {
+    z-index: 99999999999;
+    position: fixed;
+}
