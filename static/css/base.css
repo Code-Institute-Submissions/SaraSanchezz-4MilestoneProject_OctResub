@@ -78,6 +78,9 @@ body {
     cursor: pointer;
 }
 
+.toast{
+    overflow: visible;
+}
 .message-container {
     z-index: 99999999999;
     position: fixed;
