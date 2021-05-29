@@ -74,7 +74,7 @@ body {
 
 }
 
-.remove-item {
+.remove-item , .update-link {
     cursor: pointer;
 }
 

@@ -23,9 +23,11 @@
     {% endblock %}
 
     {% block extra_js %}
-    <script src="https://kit.fontawesome.com/37f3fe7521.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/37f3fe7521.js" crossorigin="anonymous"></script>
     {% endblock %}
+
+
+    
 
     <title>Brenda Guijarro Tinoco {% block extra_tittle %}{% endblock %}</title>
   </head>
@@ -102,11 +104,19 @@
      
      {% if messages %}
      <div class="message-container">
-        {% for message in messages %}
-            {% include 'includes/toasts/toast_success.html' %}
-
-
-        {% endfor%}
+         {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
 
      </div>
      {% endif %}
@@ -120,17 +130,16 @@
     {% endblock %}
     
     {% block corejs %}
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     {% endblock %}
     
-    {% block postloadjs %}
-    <script type="text/javascript">
-    $('.toast').toast('show');
-    </script>
+    {% block postloadjs %} 
     {% endblock %}
 
-
+    <script type="text/javascript">
+    $('.toast').toast('show');
+    </script> 
 
   </body>
 </html>
