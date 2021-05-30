@@ -47,3 +47,24 @@
     width: 841px;
     margin: 0 auto; 
 }
+
+#loading-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    background-color: #9b9b9b;
+}
+
+.spinner-border, 
+.spinner-border-sm,
+.spinner-grow,
+.spinner-grow-sm {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
