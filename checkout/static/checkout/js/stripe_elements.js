@@ -1,5 +1,5 @@
 var stripe_public_key = $('#id_stripe_public_key').text().slice(1,-1);
-var client_secret = $('#id_client_secret').text().slice(1,-1);
+var clientSecret = $('#id_client_secret').text().slice(1, -1);
 var stripe = Stripe(stripe_public_key);
 var elements = stripe.elements();
 var card = elements.create('card', {style: style});
@@ -7,7 +7,7 @@ var card = elements.create('card', {style: style});
 var style = {
     base: {
         color: '#383838',
-        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+        fontFamily: '"Helvetica Neue", Helvetica, sans-serif', 
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
@@ -44,6 +44,8 @@ form.addEventListener('submit', function(ev) {
     ev.preventDefault();
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
+    $('#payment-form').fadeToggle(100);
+    $('#loading-overlay').fadeToggle(100);
     stripe.confirmCardPayment(clientSecret, {
         payment_method: {
             card: card,
@@ -59,6 +61,8 @@ form.addEventListener('submit', function(ev) {
             $(errorDiv).html(html);
             card.update({ 'disabled': false});
             $('#submit-button').attr('disabled', false);
+            $('#payment-form').fadeToggle(100);
+            $('#loading-overlay').fadeToggle(100);
         } else {
             if (result.paymentIntent.status === 'succeeded') {
                 form.submit();
