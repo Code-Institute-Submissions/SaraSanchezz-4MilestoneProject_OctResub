@@ -101,6 +101,7 @@ def edit_product(request, product_id):
         messages.error(request, 'Sorry, only the Admin can do that.')
         return redirect(reverse('home'))
     product = get_object_or_404(Product, pk=product_id)
+    print("This is Product query", product)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():

@@ -19,9 +19,12 @@ body {
     padding: 30px;
     
 }
+.logo-font{
+    padding-top: 120px;
+}
 
-.dropdown-toggle::after {
-     content: none;
+ .dropdown-toggle::after { 
+     content: none; 
 }
 
  @media only screen and (max-width: 1024px) {
@@ -40,7 +43,7 @@ body {
      display: flex;
 
     }
- }
+}
 
 
  #right-side {
