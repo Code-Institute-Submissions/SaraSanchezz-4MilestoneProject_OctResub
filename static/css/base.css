@@ -85,3 +85,16 @@ body {
     z-index: 99999999999;
     position: fixed;
 }
+/* allauth formatting */
+.allauth-form-inner-content p {
+    margin-top: 2rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #aab7c4;
+    border-radius: 3;
+}
+
+
+
