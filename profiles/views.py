@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from .models import UserProfile
 from .forms import UserProfileForm
 from django.contrib import messages
+from checkout.models import Order
+
 
 def profile(request):
     # Display the user's profile.
@@ -13,7 +15,6 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated')
 
-
     form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
 
@@ -22,6 +23,23 @@ def profile(request):
         'orders': orders,
         'form': form,
         'on_profile_page': True
+    }
+
+    return render(request, template, context)
+
+
+def past_orders(request, order_number):
+    order = get_object_or_404(Order, order_number=order_number)
+
+    messages.info(request, (
+        f'This is a past confirmation for order number {order_number}. '
+        'A confirmation email was sent on the date of the purchase.'
+    ))
+
+    template = 'checkout/checkout_success.html'
+    context = {
+        'order': order,
+        'from_profile': True,
     }
 
     return render(request, template, context)

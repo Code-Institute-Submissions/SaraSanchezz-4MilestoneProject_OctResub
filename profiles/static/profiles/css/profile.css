@@ -5,3 +5,8 @@
 .update{
     margin-top: 0.75rem;
 }
+
+.past-orders{
+    max-height: 415px;
+    overflow-y: auto;
+}
