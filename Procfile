@@ -1,0 +1,1 @@
+web: gunicorn brendas_shop.wsgi:application
