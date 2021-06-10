@@ -1,7 +1,6 @@
 # Brenda Guijarro Tinoco #
 ## Art E-commerce ## 
-<img src="media/mockups/mockup2.png" alt="mockup2" width="400" height="400"/>
- 
+
 ## UX ##
 
 Project Goals:
@@ -14,16 +13,11 @@ Project Goals:
 
 Provide a powerfull e-commerce for an artist which will assist to  attract more clients, possible commisions and 
 open up to the professional artistic world.
-To sketch the frontend part of the project I have used Blasamiq wireframes: 
+To sketch the frontend part of the project I have used Blasamiq wireframes:
 
-   <img src="media/wireframes/wf1.png" alt="wireframe1" width="400" height="400"/>
-   <img src="media/wireframes/wf2.png" alt="wireframe2" width="400" height="400"/> 
-   <img src="media/wireframes/wf3.png" alt="wireframe3" width="400" height="400"/>  
-   <img src="media/wireframes/wf4.png" alt="wireframe4" width="400" height="400"/>
-   <img src="media/wireframes/wf5.png" alt="wireframe5" width="400" height="400"/>
-   <img src="media/wireframes/wf6.png" alt="wireframe6" width="400" height="400"/>
-   <img src="media/wireframes/wf7.png" alt="wireframe7" width="400" height="400"/> 
-    
+- you can find mockups and wireframes in the media folder.
+
+  
    
 ## General Features ##
 
