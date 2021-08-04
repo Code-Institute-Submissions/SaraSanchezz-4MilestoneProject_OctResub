@@ -12,9 +12,9 @@
 {% block content %}
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    BRENDA GUIJARRO TINOCO
+            <div class="col-sm-12 col-md-6 my-auto">
+                <h1 class="display-4 logo-font">
+                    <img class="d-block w-100" src="media/mockups/logo.png" alt="logo">
                 </h1>
                 <div class="my-12 text-about">
                 <div><h5>
@@ -24,26 +24,30 @@
                     </h5>
                 </div>
                 </div>
-                <div class="my-12">
+            </div>
+                <div class="col-sm-12 col-md-6 my-auto">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img class="d-block w-50" src="" alt="First slide">
+                        <img class="d-block w-100" src="media/mockups/mockup1.png" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                        <img class="d-block w-50" src="" alt="Second slide">
+                        <img class="d-block w-100" src="media/mockups/mockup2.png"  alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                        <img class="d-block w-50" src="" alt="Third slide">
+                        <img class="d-block w-100" src="media/mockups/mockup3.png"  alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 {% endblock %}
