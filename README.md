@@ -1,5 +1,6 @@
 # Brenda Guijarro Tinoco #
 ## Art E-commerce ## 
+<img src="media/mockups/logo.png" alt="logo" width="400" height="400"/>
 
 ## UX ##
 
@@ -15,7 +16,13 @@ Provide a powerfull e-commerce for an artist which will assist to  attract more 
 open up to the professional artistic world.
 To sketch the frontend part of the project I have used Blasamiq wireframes:
 
-- you can find mockups and wireframes in the media folder.
+<img src="media/wireframes/w1.png" alt="wireframe1" width="400" height="400"/>
+<img src="media/wireframes/w2.png" alt="wireframe2" width="400" height="400"/>
+<img src="media/wireframes/w3.png" alt="wireframe3" width="400" height="400"/>
+<img src="media/wireframes/w4.png" alt="wireframe4" width="400" height="400"/>
+<img src="media/wireframes/w5.png" alt="wireframe5" width="400" height="400"/>
+<img src="media/wireframes/w6.png" alt="wireframe6" width="400" height="400"/>
+<img src="media/wireframes/w7.png" alt="wireframe7" width="400" height="400"/>
 
   
    
