@@ -27,6 +27,11 @@
                 <hr class="w-100 mb-1">
             </div>
         </div>
-        <div class="row"> 
-        </div>
+        {% for post in posts %}
+            <div class="post-block">
+                <h3 class="subtitle">{{ post.tittle }}</h3>
+                <small>Posted on the {{ post.date_added }}</small>
+                <p>{{ post.body }}</p>
+            </div>
+        {% endfor %}
 {% endblock %}
