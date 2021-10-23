@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class Post(models.Model):
+class Review(models.Model):
     title = models.CharField(max_length=50, null=False, blank=False)
     rate = models.CharField(max_length=10, null=False, blank=False)
     name = models.CharField(max_length=50, null=False, blank=False)
