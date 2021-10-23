@@ -51,6 +51,7 @@
                         <li><a class="dropdown-item" href="{% url 'products' %}?category=canvas">Canvas</a></li>
                         <li><a class="dropdown-item" href="{% url 'products' %}?category=prints">Prints</a></li>
                         <li><a class="dropdown-item" href="{% url 'products' %}">All products</a></li>
+                        <li><a class="dropdown-item" href="{% url 'community' %}">Art Community</a></li>
                     </ul>
                     </li>
                 </ul>
@@ -136,6 +137,7 @@
     
     {% block postloadjs %} 
     {% endblock %}
+    <!-- initialize toasts -->
     <script type="text/javascript">
         window.onload = (event)=> {
             let myAlert = document.querySelector('.toast');
@@ -143,18 +145,5 @@
             bsAlert.show();
         }
     </script> 
-     
-     
-     <!-- $(document).ready(function() {
-            $('.toast').show()
-        });
-        $(document).ready(function() {
-            $('.toast').show();
-        }); 
-        // close toast notifications
-        $(".btn-close").click(function(){
-            $('.toast').toast('hide');
-        });// $('.toast').toast('show');-->
-
   </body>
 </html>

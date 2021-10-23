@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+   <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font-2">ART COMMUNITY:</h2>
+                   <h4>Your free space to share news, events and collaborations!</h4>
+                  <div class="dropdown">
+                        <button class="btn btn-bg.light text-dark border-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort by 
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="{% url 'community' %}?sort=date&direction=asc">Price</a>
+                        </div>
+                    </div>
+                <hr class="w-100 mb-1">
+            </div>
+        </div>
+        <div class="row"> 
+        </div>
+{% endblock %}
