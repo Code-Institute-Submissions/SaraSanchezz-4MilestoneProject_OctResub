@@ -94,6 +94,8 @@ body {
 .message-container {
     z-index: 99999999999;
     position: fixed;
+    top: 80px;
+    right: 15px;
 }
 /* allauth formatting */
 .allauth-form-inner-content p {

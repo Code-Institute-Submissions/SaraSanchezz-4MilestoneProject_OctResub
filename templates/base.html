@@ -137,15 +137,20 @@
     {% block postloadjs %} 
     {% endblock %}
     <script type="text/javascript">
-    $(document).ready(function() {
-            $('.toast').show()
-        });
+        window.onload = (event)=> {
+            let myAlert = document.querySelector('.toast');
+            let bsAlert = new  bootstrap.Toast(myAlert);
+            bsAlert.show();
+        }
     </script> 
      
      
      <!-- $(document).ready(function() {
             $('.toast').show()
         });
+        $(document).ready(function() {
+            $('.toast').show();
+        }); 
         // close toast notifications
         $(".btn-close").click(function(){
             $('.toast').toast('hide');
