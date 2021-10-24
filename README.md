@@ -121,25 +121,80 @@ This project was entirely built in Gitpod and deployed in Heroku and GitHub.
 
 Deployment steps:
 
-1. Log in into my GitHub. 
-2. Go to my repositories.
-3. choose the repository called 4rdMilestoneProject.
-4. Settings.
-5. Select Master branch.
-6. Validate selection.
-7. The ulr of the website is displayed.
+Create a new Heroku app:
+
+1. Open Heroku  [Heroku](https://id.heroku.com/login) and sign up if you don't have an account already.
+
+2. Once you are logged or signed in, on the drop-down menu button called "New" that is on the top right corner select the option "Create a new app"
+
+3. Once "Create a new app is been selected, gives you the option to name the app, in this case, brendas-shop and choose the region or country nearest to your location and confirm these changes by clicking again on "Create new app".
+
+Connect Heroku app to Github repository
+
+4. Once the app is been created, the next thing to do is connect it to the Github repository by selecting the option "Deploy" on the menu and also select the option Github - Connect to Github
+
+5. Search for your Github repository name right below where you have chosen 
+to connect the Heroku app to Github and once you found your repository name,
+select it and confirm it by clicking on the "Connect" button. 
+
+Setup PostgresSQL Database
+
+6. On the same menu, you found the "Deploy" option for your Heroku app you can also find "Resources" and go to "Add-ons". 
+
+7. Search for Heroku Postgres.
+
+8. Select the plan named "Hobby Dev - Free" and then click "Submit order form".
+
+Set environment variables
+
+9. Click on  "Settings" at the menu and select the option "Reveal config vars"
+
+10. Add the following variables : (Please be aware that the value of the following keys are secret and for private use and cannot be shared to ensure the security of the project.)
+
+- AWS_ACCESS_KEY_ID
+
+- AWS_SECRET_ACCESS_KEY
+
+- DATABASE_URL
+
+- EMAIL_HOST_PASS
+
+- EMAIL_HOST_USER
+
+- SECRET_KEY
+
+- STRIPE_PUBLIC_KEY
+
+- STRIPE_SECRET_KEY
+
+- STRIPE_WH_SECRET
+
+- USE_AWS
+
+Enable automatic deployment
+
+11. Return to the menu option "Deploy" and look for  "Automatic Deployment"
+
+12. At last, select the branch we are deploying and confirm on "Enable Automatic Deploys"
+
+1. Open GitHub  [GitHub](https://github.com/).
+2. Select desired repository on the menu, option "Repositories".
+3. Click on clone or download.
+4. Start your IDE and:
+  
+   * open a terminal window in the directory you choose and type in the "git clone" command followed by the copied URL or for zip file
+   * open the downloaded files from your IDE and install the required packages for the projects by entering the following command in the shell: pip install -r requirements.txt.
+
+5. Fork workspace on Gitpod or in your IDE so you can prevent your workspace from disappearing  after 15 days unused and restarting the process again to run the project locally.
+6. In the end, you will need to add the required environment variables for the correct setup of your project. If doing this in Gitpod  the steps are the following:
+- Go to settings on the top menu.
+- Variables.
+- Select button "New variable"
+- Add the name, value, and scope.
+- confirm this by clicking on "Add Variable".
 
 You can see the website [GitHub](https://SaraSanchezz.github.io/4MilestoneProject/)
                         [Heroku](https://brendas-shop.herokuapp.com/)
-
-Steps to run the code locally:
-
-1. Open GitHub.
-2. Select desired repository.
-3. Click on clone or download.
-4. Start your IDE.
-5. Open the terminal.
-6. Type git clone followed by the code of the repository at the terminal.
 
 ## Credits ## 
 

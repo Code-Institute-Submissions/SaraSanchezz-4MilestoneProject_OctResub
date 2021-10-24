@@ -21,17 +21,20 @@
                             Sort by 
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="{% url 'community' %}?sort=date&direction=asc">Date</a>
+                            <!--<a class="dropdown-item" href="{% url 'community' %}?sort=date&direction=asc">Date</a>-->
                         </div>
                     </div>
                 <hr class="w-100 mb-1">
             </div>
         </div>
+      
+        <div class="row">
         {% for post in posts %}
-            <div class="post-block">
-                <h3 class="subtitle">{{ post.tittle }}</h3>
+            <div class="community-post">
+                <h3 class="subtitle">{{ post.title }}</h3>
                 <small>Posted on the {{ post.date_added }}</small>
                 <p>{{ post.body }}</p>
             </div>
         {% endfor %}
+        </div>         
 {% endblock %}
