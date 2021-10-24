@@ -36,5 +36,21 @@
                 <p>{{ post.body }}</p>
             </div>
         {% endfor %}
-        </div>         
+        </div> 
+        
+        <hr>  
+         
+        <h4 class="subtitle">Post something! </h4>
+                <form method="post" action=".">
+                    {% csrf_token %}
+
+                    {{ form.as_p }}
+
+                    <div class="field">
+                        <div class="control">
+                            <button class="btn btn-light">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
 {% endblock %}

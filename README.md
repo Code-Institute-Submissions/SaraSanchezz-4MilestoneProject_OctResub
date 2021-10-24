@@ -7,6 +7,7 @@
 Project Goals:
  * Create an interactive , attractive and responsive art online shop
  * Create a functional e-commerce for an Oil paintings artist.
+ * Create an environment where clients can create a space for sharing info about Art.
  
  
 ### Design Process ###
@@ -37,7 +38,8 @@ If a client desires to sign up to track its orders through BGT art shop exists t
 However, is not required to be registered to place orders or turn into Brenda's art lover. 
 The layout of the product pages is been designed using Bootstrap card elements and helped me a lot to create this 'art gallery' vibe that fits the most for this site. 
 The carousel also makes an impression and visibly impacts the user,
-advertising past commissions or expositions. 
+advertising past commissions or expositions.
+Also, users can use the page "Art Community" as a space for sharing interesting info about , exhibitions, posible collaborations and so on.
 
 
 ## SuperUser Features ##
@@ -45,8 +47,8 @@ All superusers have access to the CRUD functionality (Only site Admins):
 
 1. C - Create: Allowed to add products and access to the db.
 2. R - Read: Full access to all products.
-3. U - Uptade: Update or change products.
-4. D - Delete: Delete products.
+3. U - Uptade: Update or change products and posts.
+4. D - Delete: Delete products posts.
 
 
 Technologies Used:
